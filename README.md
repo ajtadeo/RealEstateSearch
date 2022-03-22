@@ -1,2 +1,2 @@
 # RealEstateSearch
-Advanced searches from Roofstock to find nearby properties in Zillow.
+Chrome extension for advanced searches from Roofstock to find nearby properties in Zillow.
