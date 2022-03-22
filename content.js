@@ -13,6 +13,6 @@ chrome.runtime.onMessage.addListener(
 
         var price = document.getElementsByClassName("NumberFormatWithStyle__NumberFormatStyled-sc-1yvv7lw-0")[0].innerHTML;
         console.log(price);
-        sendResponse({contentMsg: "Parse successful"});
+        sendResponse({contentMsg: fullAddress + '\n' + price});
     }
   );
