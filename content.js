@@ -9,10 +9,10 @@ chrome.runtime.onMessage.addListener(
         var index = address.search("<br>");
         address = address.substring(0, index);
         var fullAddress = address + ' ' + cityState;
-        console.log(fullAddress);
+        // console.log(fullAddress);
 
         var price = document.getElementsByClassName("NumberFormatWithStyle__NumberFormatStyled-sc-1yvv7lw-0")[0].innerHTML;
-        console.log(price);
+        // console.log(price);
         sendResponse({contentMsg: fullAddress + '\n' + price});
     }
   );
