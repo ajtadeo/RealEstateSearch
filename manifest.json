@@ -5,7 +5,7 @@
     "content_scripts": [
         {
           "matches": [
-            "https://*.roofstock.com/*",
+            "https://*.roofstock.com/investment-property-details/*",
             "https://*.zillow.com/*"
           ],
           "js": ["content.js"]
@@ -18,7 +18,13 @@
     "background": {
         "service_worker": "background.js"
     },
+    "host_permissions":[
+      "://*/"
+    ],
     "permissions": [
-        "webNavigation"
+        "webNavigation",
+        "tabs",
+        "storage",
+        "scripting"
       ]
 }
