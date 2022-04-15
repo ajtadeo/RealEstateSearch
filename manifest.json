@@ -18,13 +18,13 @@
     "background": {
         "service_worker": "background.js"
     },
-    "host_permissions":[
-      "://*/"
-    ],
     "permissions": [
         "webNavigation",
         "tabs",
         "storage",
         "scripting"
+      ],
+    "host_permissions": [
+        "https://*/"
       ]
 }
